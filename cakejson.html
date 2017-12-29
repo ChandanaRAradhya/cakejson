@@ -1,0 +1,20 @@
+<html>
+    <script type="text/javascript" src="cakejson.js"></script>
+    
+    <body onload="populateSelect()">
+
+   <!--  <input type="button" style="margin:10px 0;font:inherit;font-size:130%;font-style:italic;" onclick="populateSelect()" value="Populate SELECT with JSON"><br> -->
+
+         <select id="sel" onchange="show(this)">
+    <option value="">-- Select --</option>
+</select>
+
+<form id=msg>
+	 <label for="name">Name:</label><input type="text" id="name"><br><br>
+	<label for="idd">Id:</label><input type="text" id="idd"><br><br>
+	<label for="type">Type:</label><input type="text"  id="type"><br>
+	<label for="ppu">ppu:</label><input type="text" id="ppu"> 
+    
+</form>
+    </body>
+</html>
