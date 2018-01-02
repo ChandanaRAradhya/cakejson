@@ -1,20 +1,55 @@
-<html>
-    <script type="text/javascript" src="cakejson.js"></script>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <title>Cup Cakes</title>
+  </head>
+  <body>
     
-    <body onload="populateSelect()">
+    <main>
+      <div class="container">
+        <div class="main-container">
+          <div class = "selection-block row">
+            <div class="col-md-4">
+              <label>Select the Dish</label>
+              <select class="custom-select" id="fooditems">
+              <option selected>Open this select menu</option>
+              </select>
+            </div>
+          </div>
+       
+          <div class=" addons-block">
+           
+           <div class="row addon-custom-block">
+            <div class="col-md-4">
+                <label for="name">Name</label>
+                 <input type="text" class="form-control" id="name" placeholder="name">
+            </div>
+                  <div class="col-md-4">
+                <label for="name">ppu</label>
+                 <input type="text" class="form-control" id="ppu" placeholder="ppu">
+            </div>
+              <div class="col-md-4">
+                <label for="name">Batters</label>
+                <select class="custom-select" id="Batters">
+                <option selected>Select one Batters</option>
+              </select>
+            </div>
+            </div>
+          <div class="row addon-custom-block">
+             <div class="col-md-4">
+                <label for="name">Toppings</label>
+                <select class="custom-select" id="toppings">
+                <option selected>Select one Topping</option>
+              </select>
+            </div>
+          </div>
+          </div>
+        </main>
+         <script src="./cakejson.js" type="text/javascript" charset="utf-8" async defer></script>
+      </body>
 
-   <!--  <input type="button" style="margin:10px 0;font:inherit;font-size:130%;font-style:italic;" onclick="populateSelect()" value="Populate SELECT with JSON"><br> -->
-
-         <select id="sel" onchange="show(this)">
-    <option value="">-- Select --</option>
-</select>
-
-<form id=msg>
-	 <label for="name">Name:</label><input type="text" id="name"><br><br>
-	<label for="idd">Id:</label><input type="text" id="idd"><br><br>
-	<label for="type">Type:</label><input type="text"  id="type"><br>
-	<label for="ppu">ppu:</label><input type="text" id="ppu"> 
-    
-</form>
-    </body>
-</html>
+    </html>
